@@ -20,7 +20,7 @@ npm run serve
 2. #### 使用场景 
  ```
 想要自定义编辑json对象的属性、属性值等的场景，具有层级结构的数据结构也可试用
-    例如：做一个mock数据的表格，或者编辑组织权限结构
+例如：做一个mock数据的表格，或者编辑组织权限结构
 ```
 3. #### 操作
 ![image](https://github.com/ThingsChange/JsonTree/blob/master/src/assets/20181112_154556.gif)
