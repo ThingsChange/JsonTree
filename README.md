@@ -10,13 +10,20 @@ npm install
 npm run serve
 ```
 
+
+
 ###  说明
-    功能：
-    无限极扩展的json编辑表格，树状结构一目了然，可以获取指定格式的json
-
-    在做公司内部管理台相关内容，遇见了需求，输入编辑json树状结构，在网上搜索一番，并未得到满意的答案，
-    就顺手写了一个，功能可能稍显薄弱，类似定制，如有错误之处，请各位指点一二，汗颜。
-
+1. #### 功能
+```
+无限极扩展的json对象编辑表格，树状结构一目了然，可以获取指定格式的json
+```
+2. #### 使用场景 
+ ```
+想要自定义编辑json对象的属性、属性值等的场景，具有层级结构的数据结构也可试用
+    例如：做一个mock数据的表格，或者编辑组织权限结构
+```
+3. #### 操作
+  [![Watch the video](https://github.com/ThingsChange/JsonTree/blob/master/src/assets/20181112155137.png)](https://github.com/ThingsChange/JsonTree/blob/master/src/assets/20181112_154556.mp4)
 ###  调用方式
       <json-tree ref="abc" :json-object="jsonObject" @original-json="getInputJson" @create-json="createJson"
              :original-button="originalButton" :create-button="createButton">

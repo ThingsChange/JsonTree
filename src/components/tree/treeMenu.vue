@@ -153,7 +153,8 @@
           label: this.bindLabel,
           type: this.bindType,
           isRequired: this.bindIsRequired,
-          remarks: this.bindRemarks
+          remarks: this.bindRemarks,
+          id: `${this.rootSet.addCount}`
         }
       },
 
