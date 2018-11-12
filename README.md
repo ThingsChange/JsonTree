@@ -23,7 +23,7 @@ npm run serve
     例如：做一个mock数据的表格，或者编辑组织权限结构
 ```
 3. #### 操作
-  [![Watch the video](https://github.com/ThingsChange/JsonTree/blob/master/src/assets/20181112155137.png)](https://github.com/ThingsChange/JsonTree/blob/master/src/assets/20181112_154556.mp4)
+![image](https://github.com/ThingsChange/JsonTree/blob/master/src/assets/20181112_154556.gif)
 ###  调用方式
       <json-tree ref="abc" :json-object="jsonObject" @original-json="getInputJson" @create-json="createJson"
              :original-button="originalButton" :create-button="createButton">
