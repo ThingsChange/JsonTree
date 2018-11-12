@@ -25,9 +25,10 @@ npm run serve
 3. #### 操作
 ![image](https://github.com/ThingsChange/JsonTree/blob/master/src/assets/20181112_154556.gif)
 ###  调用方式
+```
       <json-tree ref="abc" :json-object="jsonObject" @original-json="getInputJson" @create-json="createJson"
              :original-button="originalButton" :create-button="createButton">
-             
+```
 ### 属性
 
 
