@@ -49,7 +49,7 @@ json-tree 是基于Vue.js,搭配使用iView UI 组件样式形成的一个组件
 
 ## 如何使用
 
-----
+
 
 该项目下有components/treee组件，你可以局部或者全局注册，然后直接使用即可。下面是例子：
 ``` vue
