@@ -76,6 +76,7 @@
         bindType: this.mapSet.type,
         bindIsRequired: this.mapSet.isRequired,
         bindRemarks: this.mapSet.remarks,
+        bindId:this.mapSet.id,
         typeList: [
           { label: 'string', value: 'string' },
           { label: 'number', value: 'number' },
@@ -154,7 +155,7 @@
           type: this.bindType,
           isRequired: this.bindIsRequired,
           remarks: this.bindRemarks,
-          id: `${this.rootSet.addCount}`
+          id: this.bindId
         }
       },
 
@@ -211,6 +212,7 @@
         //  console.log('当前的值是什么呢？：', tree, parentTree, type);
         if (['child', 'brother'].includes(type)) {
           this.rootSet.addCount++;
+          this.bindId=this.rootSet.addCount
         }
         let temp = {
           nodes: [],

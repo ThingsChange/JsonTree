@@ -24,8 +24,8 @@ json-tree 是基于Vue.js,搭配使用iView UI 组件样式形成的一个组件
 - 可以依据JSON数据格式，进行无限层级的数据编辑和添加
 - 可以进行任意层级的删除操作
 - 可以通过通过组件提供的函数获取，或者指定ref获取所编辑的原始数据
-- 根据所选类型做了数据类型转换（也可以获取原始数据）
 - 预留了slot，可做自定义按钮
+- 通过预留功能函数可以生成标准的JSON对象，并根据所选类型与填写数据类型不符的做了类型转换
 - 使用您喜欢的CSS框架类来很好地格式化表格和显示数据
 - 做了基本的数据校验
 ----
@@ -53,38 +53,38 @@ json-tree 是基于Vue.js,搭配使用iView UI 组件样式形成的一个组件
 
 该项目下有components/treee组件，你可以局部或者全局注册，然后直接使用即可。下面是例子：
 ``` vue
-<json-tree ref="abc" :json-object="jsonObject" @original-json="getInputJson" @create-json="createJson"
+    <json-tree ref="abc" :json-object="jsonObject" @original-json="getInputJson" @create-json="createJson"
                    :original-button="originalButton" :create-button="createButton">
-    <template slot="createJson">
-        <span>生成JSON</span>
-    </template>
-    <template slot="originalData">
-        <span>原始数据</span>
-    </template>
- </json-tree>
+        <template slot="createJson">
+            <span>生成JSON</span>
+        </template>
+        <template slot="originalData">
+            <span>原始数据</span>
+        </template>
+    </json-tree>
 ```
 ```js
-        export default {
-                data() {
-                    return {
-                        name: 'app',
-                        jsonObject: {},//你要传递给组件的初始对象，具体请参考下面属性
-                        originalButton: false,
-                        createButton: false,
-                    }
-                },
-                components: {
-                    HelloWorld
-                },
-                methods: {
-                    getInputJson(obj) {
-                        console.log('原始数据：', obj);
-                    },
-                    createJson(obj) {
-                        console.log('生成的json：', obj);
-                    },
+    export default {
+            data() {
+                return {
+                    name: 'app',
+                    jsonObject: {},//你要传递给组件的初始对象，具体请参考下面属性
+                    originalButton: false,
+                    createButton: false,
                 }
+            },
+            components: {
+                HelloWorld
+            },
+            methods: {
+                getInputJson(obj) {
+                    console.log('原始数据：', obj);
+                },
+                createJson(obj) {
+                    console.log('生成的json：', obj);
+                },
             }
+        }
 ```
 
 

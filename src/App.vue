@@ -31,7 +31,6 @@
         methods: {
             getInputJson(obj) {
                 console.log('原始数据1：', obj);
-                // console.log(this.$refs, this.$refs['abc'].tree)
             },
             createJson(obj) {
                 console.log('生成的json：', obj);

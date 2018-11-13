@@ -105,12 +105,13 @@
       },
       //tree  为父节点，result 是截止到当前的父层，要去添加子层的操作
       getJson(tree, result) {
-        let type = tree.mapSet.type;
+        let type = tree.mapSet.type;//要被添加的类型
         let arrayIndexInArray = 0;
         switch (type) {
           case 'object':
             if (this.getDataType(result) === 'array') {
-              result.push({});
+                arrayIndexInArray=result.length;
+                result.push({});
             } else {
               if (tree.nodes && tree.nodes.length > 0) {
                 result[tree.mapSet.label] = {};
