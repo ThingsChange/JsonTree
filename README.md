@@ -55,13 +55,13 @@ json-tree 是基于Vue.js,搭配使用iView UI 组件样式形成的一个组件
 ``` vue
 <json-tree ref="abc" :json-object="jsonObject" @original-json="getInputJson" @create-json="createJson"
                    :original-button="originalButton" :create-button="createButton">
-            <template slot="createJson">
-                <span>生成JSON</span>
-            </template>
-            <template slot="originalData">
-                <span>原始数据</span>
-            </template>
-        </json-tree>
+    <template slot="createJson">
+        <span>生成JSON</span>
+    </template>
+    <template slot="originalData">
+        <span>原始数据</span>
+    </template>
+ </json-tree>
 ```
 ```js
         export default {
